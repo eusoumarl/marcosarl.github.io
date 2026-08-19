@@ -99,6 +99,52 @@ Have fun creating your portfolio on this template!!! -->
       gtag("config", "UA-122228201-4")
     </script>
     <!-- End of Google Analytics -->
+  
+    <style>
+      .projects-columns {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 50px;
+        align-items: start;
+      }
+
+      .projects-column .section-title {
+        margin-bottom: 35px;
+      }
+
+      .project-card {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 55px;
+      }
+
+      .project-card .project-wrapper__image {
+        width: 100%;
+        order: 1;
+      }
+
+      .project-card .project-wrapper__text {
+        width: 100%;
+        order: 2;
+        margin-top: 22px;
+      }
+
+      .project-card .project-wrapper__text-title {
+        margin-bottom: 12px;
+      }
+
+      .project-card .project-wrapper__text-info {
+        margin-bottom: 18px;
+      }
+
+      @media (max-width: 900px) {
+        .projects-columns {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+      }
+    </style>
+
   </head>
   <body>
     <!-- Hero Section -->
@@ -159,354 +205,163 @@ Have fun creating your portfolio on this template!!! -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem; align-items: start;">
-            <div>
+
+          <div class="projects-columns">
+
+            <!-- Últimos projetos -->
+            <div class="projects-column">
               <h2 class="section-title dark-blue-text">Últimos projetos</h2>
 
-
-                  <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Digitalização do Arquivo: Escritório sem Papel</h3>
-              <p class="project-wrapper__text-info">
-                O arquivo físico da empresa enfrentava diversos desafios relacionados à gestão documental. A falta de espaço físico adequado comprometia a organização e a segurança dos documentos. Havia um volume excessivo de cópias integrais de processos arquivadas, gerando dificuldades na localização e no manuseio dos registros.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1DGRUNiDcN3dSY2FFjy_8tFDNAf45qMFJ/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto10.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+              <!-- Project 1 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="thumbnail rounded">
+                      <img src="./assets/projeto10.png" class="img-fluid" alt="Project Image" width="1366" height="767" />
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-          
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Digitalização de Pastas de Processos Trabalhista</h3>
-              <p class="project-wrapper__text-info">
-                Este projeto envolveu a digitalização de 500 pastas de processos trabalhistas, com o objetivo de otimizar a gestão documental e garantir maior agilidade no acesso às informações.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1sQYagQ90sw7WmISaXTV-f-a1D0P6HyGw/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto9.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Digitalização do Arquivo: Escritório sem Papel</h3>
+                  <p class="project-wrapper__text-info">
+                    O arquivo físico da empresa enfrentava diversos desafios relacionados à gestão documental. A falta de espaço físico adequado comprometia a organização e a segurança dos documentos. Havia um volume excessivo de cópias integrais de processos arquivadas, gerando dificuldades na localização e no manuseio dos registros.
+                  </p>
+                  <div class="project-wrapper__text-btns">
+                    <a href="https://docs.google.com/presentation/d/1DGRUNiDcN3dSY2FFjy_8tFDNAf45qMFJ/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a>
+                  </div>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
+              </article>
 
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Movimentação de Arquivo Físico Interplantas</h3>
-              <p class="project-wrapper__text-info">
-                Após a reforma do edifício, precisamos mover um arquivo deslizante com cerca de 4.000 pastas de processos entre andares. O desafio foi que, por ser um arquivo ativo consultado diariamente, não podíamos interromper seu acesso durante a mudança.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1lR_HgNhpVyT33r7ODGXuTQQnNPBwBd9C/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto8.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+              <!-- Project 2 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="thumbnail rounded">
+                      <img src="./assets/projeto9.png" class="img-fluid" alt="Project Image" width="1366" height="767" />
+                    </div>
+                  </a>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Digitalização de Pastas de Processos Trabalhista</h3>
+                  <p class="project-wrapper__text-info">
+                    Este projeto envolveu a digitalização de 500 pastas de processos trabalhistas, com o objetivo de otimizar a gestão documental e garantir maior agilidade no acesso às informações.
+                  </p>
+                  <div class="project-wrapper__text-btns">
+                    <a href="https://docs.google.com/presentation/d/1sQYagQ90sw7WmISaXTV-f-a1D0P6HyGw/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Project 3 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div class="thumbnail rounded">
+                      <img src="./assets/projeto8.png" class="img-fluid" alt="Project Image" width="1366" height="767" />
+                    </div>
+                  </a>
+                </div>
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Movimentação de Arquivo Físico Interplantas</h3>
+                  <p class="project-wrapper__text-info">
+                    Após a reforma do edifício, precisamos mover um arquivo deslizante com cerca de 4.000 pastas de processos entre andares. O desafio foi que, por ser um arquivo ativo consultado diariamente, não podíamos interromper seu acesso durante a mudança.
+                  </p>
+                  <div class="project-wrapper__text-btns">
+                    <a href="https://docs.google.com/presentation/d/1lR_HgNhpVyT33r7ODGXuTQQnNPBwBd9C/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a>
+                  </div>
+                </div>
+              </article>
             </div>
 
-            <div>
+            <!-- Projetos anteriores -->
+            <div class="projects-column">
               <h2 class="section-title dark-blue-text">Projetos anteriores</h2>
 
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Transferência de Arquivo Físico entre Endereços</h3>
-              <p class="project-wrapper__text-info">
-                Após a dissolução da sociedade jurídica, o escritório mudou-se temporariamente para um endereço provisório até se estabelecer. Posteriormente, mudou-se definitivamente para sua sede, o que exigiu a movimentação do arquivo físico administrativo e de processos.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1McDT_jQ2lHMm9rQ_b6JmaXFUVhzw2GNO/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto7.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+              <!-- Project 4 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><div class="thumbnail rounded"><img src="./assets/projeto7.png" class="img-fluid" alt="Project Image" width="1366" height="767" /></div></a>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Digitalização de Processos | Contencioso Tributário</h3>
-              <p class="project-wrapper__text-info">
-                Ao receber um novo sócio, o escritório enfrentou o desafio de gerenciar a entrada de documentos do seu antigo escritório, sem espaço físico suficiente para armazenar cerca de 20 caixas contendo aproximadamente 400 pastas de processos de clientes, herança do sócio recém-ingressado.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1kYcvbRivCRQmPIp0pqkyt8tn-gufTIvi/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto6.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Transferência de Arquivo Físico entre Endereços</h3>
+                  <p class="project-wrapper__text-info">Após a dissolução da sociedade jurídica, o escritório mudou-se temporariamente para um endereço provisório até se estabelecer. Posteriormente, mudou-se definitivamente para sua sede, o que exigiu a movimentação do arquivo físico administrativo e de processos.</p>
+                  <div class="project-wrapper__text-btns"><a href="https://docs.google.com/presentation/d/1McDT_jQ2lHMm9rQ_b6JmaXFUVhzw2GNO/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a></div>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
+              </article>
 
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Transferência de Arquivo após Dissolução de Sociedade</h3>
-              <p class="project-wrapper__text-info">
-                Acúmulo de documentos em salas de arquivos, pastas de processos em caixas desordenadas com folhas soltas, falta de identificação clara de cliente/caso nos processos, e ausência de padrões para recebimento de documentos após a dissolução de sociedade, o que implicava a transferência de arquivos entre sociedades..
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1G1E4-JSuhPUKEPQlFPf9GqgT7YQj1Jev/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto5.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+              <!-- Project 5 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><div class="thumbnail rounded"><img src="./assets/projeto6.png" class="img-fluid" alt="Project Image" width="1366" height="767" /></div></a>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Digitalização de Processos | Contencioso Cível</h3>
-              <p class="project-wrapper__text-info">
-                O arquivo físico enfrentava problemas de espaço insuficiente, armazenamento de cópias completas de processos, alta demanda por solicitações e empréstimos de pastas, perda frequente e extravio de documentos e pastas de clientes, além de custos elevados com carga e reimpressão de documentos.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1x_phZhBEAglyKQNA24aUat9BuLjiLSlp/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto4.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Digitalização de Processos | Contencioso Tributário</h3>
+                  <p class="project-wrapper__text-info">Ao receber um novo sócio, o escritório enfrentou o desafio de gerenciar a entrada de documentos do seu antigo escritório, sem espaço físico suficiente para armazenar cerca de 20 caixas contendo aproximadamente 400 pastas de processos de clientes, herança do sócio recém-ingressado.</p>
+                  <div class="project-wrapper__text-btns"><a href="https://docs.google.com/presentation/d/1kYcvbRivCRQmPIp0pqkyt8tn-gufTIvi/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a></div>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
+              </article>
 
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Organização de Arquivo Jurídico</h3>
-              <p class="project-wrapper__text-info">
-                O projeto consistia em criar um sistema de arquivo eficiente que permitisse o escritório gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do Arquivo Corrente e do Arquivo Intermediário (inativo) de processos.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1XWr7w24-iaKry_yuIrJ-1BF5edyL7HPa/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto3.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+              <!-- Project 6 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><div class="thumbnail rounded"><img src="./assets/projeto5.png" class="img-fluid" alt="Project Image" width="1366" height="767" /></div></a>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
-
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Organização do Arquivo de Recursos Humanos, Jurídico e Administrativo</h3>
-              <p class="project-wrapper__text-info">
-                O desafio consistia em criar um sistema de arquivo eficiente que permitisse a empresa gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do arquivo corrente de prontuários de funcionários terceirizados para reduzir os custos com auditoria trabalhista.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1TnoFaxNTTaO0Swu0xLRDEdgVWqmpD5EW/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto2.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Transferência de Arquivo após Dissolução de Sociedade</h3>
+                  <p class="project-wrapper__text-info">Acúmulo de documentos em salas de arquivos, pastas de processos em caixas desordenadas com folhas soltas, falta de identificação clara de cliente/caso nos processos, e ausência de padrões para recebimento de documentos após a dissolução de sociedade, o que implicava a transferência de arquivos entre sociedades..</p>
+                  <div class="project-wrapper__text-btns"><a href="https://docs.google.com/presentation/d/1G1E4-JSuhPUKEPQlFPf9GqgT7YQj1Jev/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a></div>
                 </div>
-              </a>
-            </div>
-          </article>
-          <!-- /END Project -->
+              </article>
 
-
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">Reestruturação e Organização do Arquivo Físico</h3>
-              <p class="project-wrapper__text-info">
-                O projeto consistia em criar um sistema de arquivo eficiente que permitisse à empresa gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do arquivo corrente e do arquivo intermediário, além da revisão dos manuais de procedimento.
-              </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://docs.google.com/presentation/d/1Xrmr_IFH6T0LNdX2ANvXHaaqfh7GR1WO/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Saiba mais...</a>
-              </div>
-            </div>
-
-            <div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto1.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
+              <!-- Project 7 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><div class="thumbnail rounded"><img src="./assets/projeto4.png" class="img-fluid" alt="Project Image" width="1366" height="767" /></div></a>
                 </div>
-              </a>
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Digitalização de Processos | Contencioso Cível</h3>
+                  <p class="project-wrapper__text-info">O arquivo físico enfrentava problemas de espaço insuficiente, armazenamento de cópias completas de processos, alta demanda por solicitações e empréstimos de pastas, perda frequente e extravio de documentos e pastas de clientes, além de custos elevados com carga e reimpressão de documentos.</p>
+                  <div class="project-wrapper__text-btns"><a href="https://docs.google.com/presentation/d/1x_phZhBEAglyKQNA24aUat9BuLjiLSlp/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a></div>
+                </div>
+              </article>
+
+              <!-- Project 8 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><div class="thumbnail rounded"><img src="./assets/projeto3.png" class="img-fluid" alt="Project Image" width="1366" height="767" /></div></a>
+                </div>
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Organização de Arquivo Jurídico</h3>
+                  <p class="project-wrapper__text-info">O projeto consistia em criar um sistema de arquivo eficiente que permitisse o escritório gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do Arquivo Corrente e do Arquivo Intermediário (inativo) de processos.</p>
+                  <div class="project-wrapper__text-btns"><a href="https://docs.google.com/presentation/d/1XWr7w24-iaKry_yuIrJ-1BF5edyL7HPa/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a></div>
+                </div>
+              </article>
+
+              <!-- Project 9 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><div class="thumbnail rounded"><img src="./assets/projeto2.png" class="img-fluid" alt="Project Image" width="1366" height="767" /></div></a>
+                </div>
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Organização do Arquivo de Recursos Humanos, Jurídico e Administrativo</h3>
+                  <p class="project-wrapper__text-info">O desafio consistia em criar um sistema de arquivo eficiente que permitisse a empresa gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do arquivo corrente de prontuários de funcionários terceirizados para reduzir os custos com auditoria trabalhista.</p>
+                  <div class="project-wrapper__text-btns"><a href="https://docs.google.com/presentation/d/1TnoFaxNTTaO0Swu0xLRDEdgVWqmpD5EW/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a></div>
+                </div>
+              </article>
+
+              <!-- Project 10 -->
+              <article class="row project-card">
+                <div class="project-wrapper__image">
+                  <a href="#" target="_blank" rel="noopener noreferrer"><div class="thumbnail rounded"><img src="./assets/projeto1.png" class="img-fluid" alt="Project Image" width="1366" height="767" /></div></a>
+                </div>
+                <div class="project-wrapper__text">
+                  <h3 class="project-wrapper__text-title">Reestruturação e Organização do Arquivo Físico</h3>
+                  <p class="project-wrapper__text-info">O projeto consistia em criar um sistema de arquivo eficiente que permitisse à empresa gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do arquivo corrente e do arquivo intermediário, além da revisão dos manuais de procedimento.</p>
+                  <div class="project-wrapper__text-btns"><a href="https://docs.google.com/presentation/d/1Xrmr_IFH6T0LNdX2ANvXHaaqfh7GR1WO/edit?usp=sharing&ouid=116306883399450186523&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="cta-btn cta-btn--hero cta-btn--projects">Saiba mais...</a></div>
+                </div>
+              </article>
             </div>
-          </article>
-          <!-- /END Project -->
-            </div>
+
           </div>
         </div>
       </div>
