@@ -67,71 +67,6 @@ Have fun creating your portfolio on this template!!! -->
     <!-- link tags -->
     <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <style>
-      /* Nova divisão da seção, mantendo o visual original do site */
-      .projects-columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 50px;
-        align-items: start;
-      }
-
-      .projects-column {
-        min-width: 0;
-      }
-
-      /* Mantém o título com a configuração original */
-      .projects-column .project-wrapper > .section-title {
-        margin-bottom: 40px;
-      }
-
-      /* Espaço reservado para os próximos projetos */
-      .latest-projects-placeholder {
-        min-height: 100px;
-      }
-
-      /*
-       * O projeto continua usando as mesmas classes originais.
-       * Só mudamos a disposição para:
-       * imagem
-       * título/descrição/botão
-       */
-      .projects-column--other .project-wrapper > article.row {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 70px;
-      }
-
-      .projects-column--other .project-wrapper > article.row .project-wrapper__image {
-        order: 1;
-        width: 100%;
-        margin-bottom: 25px;
-      }
-
-      .projects-column--other .project-wrapper > article.row .project-wrapper__text {
-        order: 2;
-        width: 100%;
-      }
-
-      /*
-       * A imagem continua com a proporção original definida no HTML
-       * (1366 x 767), sem corte ou deformação.
-       */
-      .projects-column--other .project-wrapper__image img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
-      @media (max-width: 768px) {
-        .projects-columns {
-          grid-template-columns: 1fr;
-          gap: 60px;
-        }
-      }
-    </style>
-
 
     <!-- FontAwesome Icons link -->
     <link
@@ -223,21 +158,10 @@ Have fun creating your portfolio on this template!!! -->
     <!--Projects Section-->
     <section id="projects">
       <div class="container">
-        <div class="projects-columns">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Últimos projetos</h2>
 
-          <!-- Últimos projetos -->
-          <div class="projects-column projects-column--latest">
-            <div class="project-wrapper">
-              <h2 class="section-title dark-blue-text">Últimos projetos</h2>
-              <div class="latest-projects-placeholder"></div>
-            </div>
-          </div>
-
-          <!-- Outros projetos -->
-          <div class="projects-column projects-column--other">
-            <div class="project-wrapper">
-              <h2 class="section-title dark-blue-text">Outros projetos</h2>
-          <!-- Each .row is a project -->
+                  <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Digitalização do Arquivo: Escritório sem Papel</h3>
@@ -269,6 +193,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+          
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -301,6 +226,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -333,6 +259,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -365,6 +292,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -397,6 +325,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -429,6 +358,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -461,6 +391,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -493,6 +424,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -525,6 +457,7 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
+
           <!-- Each .row is a project -->
           <article class="row">
             <div class="project-wrapper__text">
@@ -557,9 +490,6 @@ Have fun creating your portfolio on this template!!! -->
             </div>
           </article>
           <!-- /END Project -->
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
