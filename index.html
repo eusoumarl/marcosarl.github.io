@@ -68,10 +68,10 @@ Have fun creating your portfolio on this template!!! -->
     <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <style>
-      /* Layout dos blocos de projetos */
+      /* Dois blocos da seção de projetos */
       .projects-columns {
         display: grid;
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 50px;
         align-items: start;
       }
@@ -84,43 +84,18 @@ Have fun creating your portfolio on this template!!! -->
         margin-bottom: 40px;
       }
 
-      .projects-column--other .project-wrapper {
-        width: 100%;
-      }
-
-      .projects-column--other .project-wrapper > .row {
-        width: 100%;
-      }
-
+      /* Reserva para os projetos futuros */
       .latest-projects-placeholder {
-        min-height: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 30px;
-        border: 1px dashed rgba(0, 0, 0, 0.15);
-        border-radius: 8px;
+        padding: 30px 20px;
         text-align: center;
       }
 
-
-      .projects-column--other .project-wrapper__text-title {
-        margin-top: 0;
-      }
-
-      /* Mantém a proporção original das imagens dos projetos */
-      .projects-column--other .project-wrapper__image img {
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      /* Foto acima e conteúdo abaixo, preservando a tipografia original */
+      /* No bloco "Outros projetos", a foto vem antes do texto */
       .projects-column--other .project-wrapper > .row {
         display: flex;
         flex-direction: column;
         align-items: stretch;
+        margin-bottom: 70px;
       }
 
       .projects-column--other .project-wrapper__image {
@@ -136,9 +111,12 @@ Have fun creating your portfolio on this template!!! -->
         margin-top: 0;
       }
 
-
-      .projects-column--other .project-wrapper > .row {
-        margin-bottom: 70px;
+      /* Mantém a proporção original de 1366x767 */
+      .projects-column--other .project-wrapper__image img {
+        display: block;
+        width: 100%;
+        max-width: 1366px;
+        height: auto;
       }
 
       @media (max-width: 768px) {
@@ -247,7 +225,7 @@ Have fun creating your portfolio on this template!!! -->
             <h2 class="section-title dark-blue-text">Últimos projetos</h2>
 
             <div class="latest-projects-placeholder">
-              <p>Novos projetos serão adicionados aqui.</p>
+              <p>Em breve, novos projetos.</p>
             </div>
           </div>
 
@@ -258,7 +236,7 @@ Have fun creating your portfolio on this template!!! -->
             <div class="project-wrapper">
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -284,13 +262,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -316,13 +292,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -348,13 +322,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -380,13 +352,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -412,13 +382,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -444,13 +412,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -476,13 +442,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -508,13 +472,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -540,13 +502,11 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-              </a>
-            </div>
           </article>
           <!-- /END Project -->
           <!-- Each .row is a project -->
           <article class="row">
-            <div class="project-wrapper__image">
+<div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
@@ -571,8 +531,6 @@ Have fun creating your portfolio on this template!!! -->
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >Saiba mais...</a>
               </div>
-            </div>
-              </a>
             </div>
           </article>
           <!-- /END Project -->
