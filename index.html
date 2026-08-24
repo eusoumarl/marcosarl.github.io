@@ -104,44 +104,41 @@ Have fun creating your portfolio on this template!!! -->
       }
 
 
-      /* Projetos: imagem acima e descrição abaixo */
-      .projects-column--other .project-wrapper > .row {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-
-      .projects-column--other .project-wrapper__image {
-        order: 1;
-        width: 100%;
-        margin-bottom: 25px;
-      }
-
-      .projects-column--other .project-wrapper__text {
-        order: 2;
-        width: 100%;
-      }
-
-      .projects-column--other .project-wrapper__image .thumbnail {
-        width: 100%;
-      }
-
-      .projects-column--other .project-wrapper__image img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
       .projects-column--other .project-wrapper__text-title {
         margin-top: 0;
       }
 
       /* Mantém a proporção original das imagens dos projetos */
       .projects-column--other .project-wrapper__image img {
-        width: 1366px;
-        height: 767px;
         max-width: 100%;
+        width: 100%;
         height: auto;
+        display: block;
+      }
+
+      /* Foto acima e conteúdo abaixo, preservando a tipografia original */
+      .projects-column--other .project-wrapper > .row {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .projects-column--other .project-wrapper__image {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      .projects-column--other .project-wrapper__text {
+        width: 100%;
+      }
+
+      .projects-column--other .project-wrapper__text-title {
+        margin-top: 0;
+      }
+
+
+      .projects-column--other .project-wrapper > .row {
+        margin-bottom: 70px;
       }
 
       @media (max-width: 768px) {
