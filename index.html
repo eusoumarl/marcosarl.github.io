@@ -68,7 +68,7 @@ Have fun creating your portfolio on this template!!! -->
     <link rel="preload" as="style" href="./css/main.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <style>
-      /* Dois blocos da seção de projetos */
+      /* Nova divisão da seção, mantendo o visual original do site */
       .projects-columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -80,42 +80,47 @@ Have fun creating your portfolio on this template!!! -->
         min-width: 0;
       }
 
-      .projects-column .section-title {
+      /* Mantém o título com a configuração original */
+      .projects-column .project-wrapper > .section-title {
         margin-bottom: 40px;
       }
 
-      /* Reserva para os projetos futuros */
+      /* Espaço reservado para os próximos projetos */
       .latest-projects-placeholder {
-        padding: 30px 20px;
-        text-align: center;
+        min-height: 100px;
       }
 
-      /* No bloco "Outros projetos", a foto vem antes do texto */
-      .projects-column--other .project-wrapper > .row {
+      /*
+       * O projeto continua usando as mesmas classes originais.
+       * Só mudamos a disposição para:
+       * imagem
+       * título/descrição/botão
+       */
+      .projects-column--other .project-wrapper > article.row {
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        width: 100%;
         margin-bottom: 70px;
       }
 
-      .projects-column--other .project-wrapper__image {
+      .projects-column--other .project-wrapper > article.row .project-wrapper__image {
+        order: 1;
         width: 100%;
         margin-bottom: 25px;
       }
 
-      .projects-column--other .project-wrapper__text {
+      .projects-column--other .project-wrapper > article.row .project-wrapper__text {
+        order: 2;
         width: 100%;
       }
 
-      .projects-column--other .project-wrapper__text-title {
-        margin-top: 0;
-      }
-
-      /* Mantém a proporção original de 1366x767 */
+      /*
+       * A imagem continua com a proporção original definida no HTML
+       * (1366 x 767), sem corte ou deformação.
+       */
       .projects-column--other .project-wrapper__image img {
         display: block;
         width: 100%;
-        max-width: 1366px;
         height: auto;
       }
 
@@ -222,33 +227,19 @@ Have fun creating your portfolio on this template!!! -->
 
           <!-- Últimos projetos -->
           <div class="projects-column projects-column--latest">
-            <h2 class="section-title dark-blue-text">Últimos projetos</h2>
-
-            <div class="latest-projects-placeholder">
-              <p>Em breve, novos projetos.</p>
+            <div class="project-wrapper">
+              <h2 class="section-title dark-blue-text">Últimos projetos</h2>
+              <div class="latest-projects-placeholder"></div>
             </div>
           </div>
 
           <!-- Outros projetos -->
           <div class="projects-column projects-column--other">
-            <h2 class="section-title dark-blue-text">Outros projetos</h2>
-
             <div class="project-wrapper">
+              <h2 class="section-title dark-blue-text">Outros projetos</h2>
           <!-- Each .row is a project -->
           <article class="row">
-<div class="project-wrapper__image">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/projeto10.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                    width="1366"
-                    height="767"
-                  />
-                </div>
-
-          <div class="project-wrapper__text">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Digitalização do Arquivo: Escritório sem Papel</h3>
               <p class="project-wrapper__text-info">
                 O arquivo físico da empresa enfrentava diversos desafios relacionados à gestão documental. A falta de espaço físico adequado comprometia a organização e a segurança dos documentos. Havia um volume excessivo de cópias integrais de processos arquivadas, gerando dificuldades na localização e no manuseio dos registros.
@@ -262,23 +253,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto9.png"
+                    src="./assets/projeto10.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Digitalização de Pastas de Processos Trabalhista</h3>
               <p class="project-wrapper__text-info">
                 Este projeto envolveu a digitalização de 500 pastas de processos trabalhistas, com o objetivo de otimizar a gestão documental e garantir maior agilidade no acesso às informações.
@@ -292,23 +285,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto8.png"
+                    src="./assets/projeto9.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Movimentação de Arquivo Físico Interplantas</h3>
               <p class="project-wrapper__text-info">
                 Após a reforma do edifício, precisamos mover um arquivo deslizante com cerca de 4.000 pastas de processos entre andares. O desafio foi que, por ser um arquivo ativo consultado diariamente, não podíamos interromper seu acesso durante a mudança.
@@ -322,23 +317,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto7.png"
+                    src="./assets/projeto8.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Transferência de Arquivo Físico entre Endereços</h3>
               <p class="project-wrapper__text-info">
                 Após a dissolução da sociedade jurídica, o escritório mudou-se temporariamente para um endereço provisório até se estabelecer. Posteriormente, mudou-se definitivamente para sua sede, o que exigiu a movimentação do arquivo físico administrativo e de processos.
@@ -352,23 +349,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto6.png"
+                    src="./assets/projeto7.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Digitalização de Processos | Contencioso Tributário</h3>
               <p class="project-wrapper__text-info">
                 Ao receber um novo sócio, o escritório enfrentou o desafio de gerenciar a entrada de documentos do seu antigo escritório, sem espaço físico suficiente para armazenar cerca de 20 caixas contendo aproximadamente 400 pastas de processos de clientes, herança do sócio recém-ingressado.
@@ -382,23 +381,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto5.png"
+                    src="./assets/projeto6.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Transferência de Arquivo após Dissolução de Sociedade</h3>
               <p class="project-wrapper__text-info">
                 Acúmulo de documentos em salas de arquivos, pastas de processos em caixas desordenadas com folhas soltas, falta de identificação clara de cliente/caso nos processos, e ausência de padrões para recebimento de documentos após a dissolução de sociedade, o que implicava a transferência de arquivos entre sociedades..
@@ -412,23 +413,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto4.png"
+                    src="./assets/projeto5.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Digitalização de Processos | Contencioso Cível</h3>
               <p class="project-wrapper__text-info">
                 O arquivo físico enfrentava problemas de espaço insuficiente, armazenamento de cópias completas de processos, alta demanda por solicitações e empréstimos de pastas, perda frequente e extravio de documentos e pastas de clientes, além de custos elevados com carga e reimpressão de documentos.
@@ -442,23 +445,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto3.png"
+                    src="./assets/projeto4.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Organização de Arquivo Jurídico</h3>
               <p class="project-wrapper__text-info">
                 O projeto consistia em criar um sistema de arquivo eficiente que permitisse o escritório gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do Arquivo Corrente e do Arquivo Intermediário (inativo) de processos.
@@ -472,23 +477,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto2.png"
+                    src="./assets/projeto3.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Organização do Arquivo de Recursos Humanos, Jurídico e Administrativo</h3>
               <p class="project-wrapper__text-info">
                 O desafio consistia em criar um sistema de arquivo eficiente que permitisse a empresa gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do arquivo corrente de prontuários de funcionários terceirizados para reduzir os custos com auditoria trabalhista.
@@ -502,23 +509,25 @@ Have fun creating your portfolio on this template!!! -->
                   >Saiba mais...</a>
               </div>
             </div>
-          </article>
-          <!-- /END Project -->
-          <!-- Each .row is a project -->
-          <article class="row">
-<div class="project-wrapper__image">
+
+            <div class="project-wrapper__image">
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <div class="thumbnail rounded">
                   <img
-                    src="./assets/projeto1.png"
+                    src="./assets/projeto2.png"
                     class="img-fluid"
                     alt="Project Image"
                     width="1366"
                     height="767"
                   />
                 </div>
-
-          <div class="project-wrapper__text">
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
               <h3 class="project-wrapper__text-title">Reestruturação e Organização do Arquivo Físico</h3>
               <p class="project-wrapper__text-info">
                 O projeto consistia em criar um sistema de arquivo eficiente que permitisse à empresa gerenciar seus documentos de forma organizada e em conformidade com as regulamentações aplicáveis. Isso implicava na reestruturação do arquivo corrente e do arquivo intermediário, além da revisão dos manuais de procedimento.
@@ -531,6 +540,20 @@ Have fun creating your portfolio on this template!!! -->
                   class="cta-btn cta-btn--hero cta-btn--projects"
                   >Saiba mais...</a>
               </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/projeto1.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
             </div>
           </article>
           <!-- /END Project -->
